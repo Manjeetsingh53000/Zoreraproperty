@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
+A full-stack Real Estate Management Web Application for Zorera Infratech, built to streamline property listing, buyer-seller communication, and admin control — offering a modern, mobile-responsive interface and secure backend.
 
-## Project info
+🌐 Live Website
 
-**URL**: https://lovable.dev/projects/c00f17ed-2c2b-401e-aa05-bff4f1053850
+https://zorerainfratech.com image
+<img width="1909" height="966" alt="image" src="https://github.com/user-attachments/assets/2cd3be09-9e45-45a0-a6be-7bf3a4d732bb" />
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+🚀 Tech Stack Layer Technology Frontend React + TypeScript + Vite Styling Tailwind CSS, shadcn/ui, Lucide Icons Backend Node.js + Express.js Database MongoDB Atlas Auth JWT (JSON Web Tokens) Deployment VPS / Railway / Netlify State Mgmt React Context + React Query Storage Cloud / Local upload (via Multer or Firebase Storage) 📦 Features 🧑‍💼 Admin Panel
 
-**Use Lovable**
+Add, edit, delete properties
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c00f17ed-2c2b-401e-aa05-bff4f1053850) and start prompting.
+Manage categories and featured listings
 
-Changes made via Lovable will be committed automatically to this repo.
+Approve or reject user submissions
 
-**Use your preferred IDE**
+Dynamic page management (Gallery, About, etc.)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Upload property images & documents
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Dashboard stats and user analytics
 
-Follow these steps:
+🏡 User Panel
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Browse all available properties by category
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Filter by price, location, or type (House, Plot, Commercial, etc.)
 
-# Step 3: Install the necessary dependencies.
-npm i
+View property details with images & description
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Contact via WhatsApp or Enquiry form
 
-**Edit a file directly in GitHub**
+Submit property for sale or rent image
+<img width="1898" height="867" alt="image" src="https://github.com/user-attachments/assets/f123cab4-9859-4530-ac8a-c202da2698c5" />
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+💳 Additional Integrations
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contact form integrated with backend mail service
 
-## What technologies are used for this project?
+WhatsApp floating chat
 
-This project is built with:
+PWA setup for app-like install
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+SEO-friendly meta tags
 
-## How can I deploy this project?
+Responsive UI for mobile, tablet, and desktop
 
-Simply open [Lovable](https://lovable.dev/projects/c00f17ed-2c2b-401e-aa05-bff4f1053850) and click on Share -> Publish.
+⚙️ Project Setup 1️⃣ Clone the Repo git clone https://github.com/your-username/zorera-property-hub-main.git cd zorera-property-hub-main
 
-## Can I connect a custom domain to my Lovable project?
+2️⃣ Install Dependencies
 
-Yes, you can!
+For client: image
+<img width="1896" height="868" alt="image" src="https://github.com/user-attachments/assets/85c3a7e3-c52f-49b7-a190-ec352e7822cf" />
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+cd client npm install
+
+For server:
+
+cd server npm install
+
+3️⃣ Environment Variables
+
+Create .env files inside /server and /client:
+
+.env (Server) PORT=4000 MONGODB_URI=your_mongodb_connection_string JWT_SECRET=your_secret_key CORS_ORIGIN=http://localhost:5173
+
+.env (Client) VITE_API_BASE_URL=http://localhost:4000/api
+
+4️⃣ Run the App Locally
+
+Run backend: image
+<img width="1882" height="857" alt="image" src="https://github.com/user-attachments/assets/99065b74-62f5-4835-a573-673651eef618" />
+
+
+cd server npm run dev
+
+Run frontend:
+
+cd client npm run dev
+
+App runs at http://localhost:5173
+
+🗂️ Folder Structure zorera-property-hub-main/ │ ├── client/ # React Frontend │ ├── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── contexts/ │ │ ├── services/api.js │ │ └── main.tsx │ └── vite.config.ts │ ├── server/ # Express Backend │ ├── routes/ │ ├── models/ │ ├── controllers/ │ ├── middleware/ │ └── index.ts │ └── README.md # (You’re here)
+
+🔐 Authentication Flow image
+<img width="1882" height="857" alt="image" src="https://github.com/user-attachments/assets/5f4b6507-5443-4428-a1b1-13ef9689e075" />
+
+
+User registers → Email verification (optional)
+
+Login via JWT token
+
+Protected routes for admin pages
+
+Token stored in HTTP-only cookies or localStorage
+
+📊 Admin Dashboard Modules
+
+Dashboard Overview (total users, properties, enquiries)
+
+Property Management (CRUD)
+
+Category Management
+
+Transaction / Package Management (if active)
+
+Media Gallery
+
+Page Content Editor
+
+📱 Responsive Design
+
+Fully optimized for Mobile, Tablet, and Desktop
+
+Tailwind + flex/grid system ensures layout consistency
+
+Optimized images for faster loading image
+<img width="1894" height="897" alt="image" src="https://github.com/user-attachments/assets/4f38348f-d8f1-4aba-a4a4-f2463f74c81b" />
+
+
+🧾 Future Enhancements
+
+Razorpay / PhonePe payment integration
+
+Booking system for rental properties
+
+Multi-user role (Admin / Sub-Admin / Agent)
+
+SEO panel for dynamic metadata
+
+AI-based property recommendation
